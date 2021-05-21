@@ -4,6 +4,7 @@
   --white-color: #ffffff;
   --grey-color: #757575;
   --background-color: #2f303a;
+  --background-button: #f5f4fa;
   --black-color: #000000;
   --main-font: 'Roboto', sans-serif;
   --accent-font: 'Raleway', sans-serif;
@@ -20,6 +21,7 @@ body {
   font-family: var(--main-font);
   font-style: normal;
   font-weight: normal;
+  letter-spacing: 0.03em;
 }
 
 /* header */
@@ -36,12 +38,11 @@ body {
   line-height: 1.173;
 }
 
-.logo span {
+.first-logo {
   color: var(--blue-color);
 }
 
 .link {
-  font-family: var(--main-font);
   font-weight: 500;
   list-style: none;
   line-height: 1.172;
@@ -54,7 +55,6 @@ body {
 }
 
 .contacts a {
-  font-family: var(--main-font);
   font-weight: 500;
   list-style: none;
   line-height: 1.142;
@@ -75,7 +75,6 @@ body {
 }
 
 .title-baner {
-  font-family: var(--main-font);
   color: var(--white-color);
   font-weight: 900;
   font-size: 44px;
@@ -83,7 +82,7 @@ body {
 }
 
 .btn {
-  font-family: var(--main-font);
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
@@ -91,9 +90,11 @@ body {
   border: 1px solid var(--blue-color);
   border-radius: 4px;
   color: var(--white-color);
-  background-color: var(--blue-color);
   cursor: pointer;
+  background-color: var(--blue-color);
 }
+
+/* Особенности */
 
 .hidden {
   position: absolute;
@@ -104,16 +105,127 @@ body {
 }
 
 .specifics-list h3 {
-  font-family: var(--main-font);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.172;
-  letter-spacing: 0.03em;
 }
 
 .specifics-list p {
   font-size: 14px;
   color: var(--grey-color);
   line-height: 1.714;
-  letter-spacing: 0.03em;
+}
+
+/* Особенности */
+
+/* Чем мы занимаемся */
+.title-section {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.166;
+}
+
+/* Чем мы занимаемся */
+
+/* Наша команда */
+.team h3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.171;
+}
+
+.team p {
+  font-size: 16px;
+  line-height: 1.171;
+  color: var(--grey-color);
+}
+/* Наша команда */
+
+/* footer */
+.footer {
+  background-color: var(--background-color);
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.second-logo {
+  color: var(--white-color);
+}
+
+.adress {
+  font-style: normal;
+}
+.adress li {
+  font-size: 14px;
+  line-height: 1.714;
+  color: var(--white-color);
+}
+
+.adress a {
+  list-style: none;
+  line-height: 1.714;
+  font-size: 14px;
+  color: var(--grey-color);
+  text-decoration: none;
+}
+
+.adress a:hover,
+.address a:focus {
+  color: var(--blue-color);
+}
+/* footer */
+
+/* portfolio */
+.our-works li {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+}
+
+.btn-works {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: var(--background-button);
+}
+
+.btn-works:hover,
+.btn-works:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border: 1px solid var(--black-color);
+  color: var(--white-color);
+  background-color: var(--blue-color);
+}
+
+.btn-active {
+  border: 1px solid var(--black-color);
+  color: var(--white-color);
+  background-color: var(--blue-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.finished-works a {
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+
+.finished-works h2 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.finished-works p {
+  font-size: 16px;
+  line-height: 1.875;
+  color: var(--grey-color);
 }
