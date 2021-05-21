@@ -1,0 +1,24 @@
+:root {
+  --main-text-color: #212121;
+  --blue-color: #2196f3;
+  --main-font: 'Roboto', sans-serif;
+  --accent-font: 'Raleway', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: var(--main-text-color);
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: normal;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
