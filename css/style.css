@@ -1,6 +1,10 @@
 :root {
   --main-text-color: #212121;
   --blue-color: #2196f3;
+  --white-color: #ffffff;
+  --grey-color: #757575;
+  --background-color: #2f303a;
+  --black-color: #000000;
   --main-font: 'Roboto', sans-serif;
   --accent-font: 'Raleway', sans-serif;
 }
@@ -19,21 +23,97 @@ body {
 }
 
 /* header */
-
 .nav-list a {
-  list-style: none;
+  text-decoration: none;
+  color: var(--main-text-color);
 }
 
 .logo {
   font-size: 26px;
   font-family: var(--accent-font);
-  font-style: normal;
   font-weight: 700;
-  color: #000000;
-  line-height: 1, 173;
-  list-style: none;
+  color: var(--black-color);
+  line-height: 1.173;
 }
 
 .logo span {
   color: var(--blue-color);
+}
+
+.link {
+  font-family: var(--main-font);
+  font-weight: 500;
+  list-style: none;
+  line-height: 1.172;
+  font-size: 14px;
+}
+
+.link:hover,
+.link:focus {
+  color: var(--blue-color);
+}
+
+.contacts a {
+  font-family: var(--main-font);
+  font-weight: 500;
+  list-style: none;
+  line-height: 1.142;
+  font-size: 14px;
+  color: var(--grey-color);
+  text-decoration: none;
+  letter-spacing: 0.02em;
+}
+.contacts a:hover,
+.contacts a:focus {
+  color: var(--blue-color);
+}
+
+/* main */
+
+.banner {
+  background-color: var(--background-color);
+}
+
+.title-baner {
+  font-family: var(--main-font);
+  color: var(--white-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.363;
+}
+
+.btn {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  border: 1px solid var(--blue-color);
+  border-radius: 4px;
+  color: var(--white-color);
+  background-color: var(--blue-color);
+  cursor: pointer;
+}
+
+.hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.specifics-list h3 {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.172;
+  letter-spacing: 0.03em;
+}
+
+.specifics-list p {
+  font-size: 14px;
+  color: var(--grey-color);
+  line-height: 1.714;
+  letter-spacing: 0.03em;
 }
