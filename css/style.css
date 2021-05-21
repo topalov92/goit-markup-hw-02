@@ -18,7 +18,9 @@ body {
   font-weight: normal;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.logo {
+}
+
+.firstLogo {
+  color: var (var(--blue-color));
 }
