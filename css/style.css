@@ -217,6 +217,11 @@ body {
   color: var(--main-text-color);
 }
 
+.finished-works a:hover,
+.finished-works a:focus {
+  color: var(--blue-color);
+}
+
 .finished-works h2 {
   font-size: 18px;
   font-weight: 700;
