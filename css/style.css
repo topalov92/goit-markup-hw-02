@@ -2,6 +2,7 @@
   --main-text-color: #212121;
   --blue-color: #2196f3;
   --white-color: #ffffff;
+  --white-color-shadow: rgba(255, 255, 255, 0.6);
   --grey-color: #757575;
   --background-color: #2f303a;
   --background-button: #f5f4fa;
@@ -170,7 +171,7 @@ body {
   list-style: none;
   line-height: 1.714;
   font-size: 14px;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--white-color-shadow);
   text-decoration: none;
 }
 
